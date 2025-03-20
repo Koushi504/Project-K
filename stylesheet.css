@@ -1,3 +1,8 @@
+/* aタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .subtitle{
   /*テキストを中心に黒で配置*/
@@ -84,13 +89,14 @@
   }
 
 /* アコーディオン ここから */
-dl {
+.blackBox {
   width: 30%;
   /*ボタンの間の距離*/
   margin: 0 auto 10px auto;
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
+
 dl:first-child {
 /*一番上のボタンとその上の文章の距離*/
   margin-top:10px;
@@ -133,13 +139,30 @@ dd {
   height: 100px;
 }
 
-/*  */
+/* 新しいボタンのスタイル */
+
+dl{
+  width: center;
+  margin: 0 auto 10px auto;
+}
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+button {
+  padding: 0;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
 /* ボタンのスタイル */
 .buttonIconText {
   display: flex;
   gap: 8px;
   align-items: center;
   width: 100%;
+  position:relative;
   max-width: 320px;
   height: 64px;
   padding: 8px 64px 8px 8px;
@@ -157,6 +180,7 @@ dd {
   padding: 8px 8px 8px 64px;
 }
 
+/*ボタン内の矢印について？*/
 .buttonIconText_icon {
   display: flex;
   flex-shrink: 0;
@@ -166,7 +190,7 @@ dd {
   aspect-ratio: 1;
   overflow: hidden;
 }
-
+/*ボタン内の文字について*/
 .buttonIconText_text {
   flex-shrink: 1;
   width: 100%;
@@ -190,11 +214,11 @@ dd {
   }
 
   .buttonIconText:hover .buttonIconText_icon__left {
-    transform: translateX(-4px);
+    transform: translateX(-50%);
   }
 }
 
 /* 左矢印アイコンのスタイル */
 .iconArrowLeft {
-  rotate: 180deg;
+  rotate: 180deg; /*degは回転させる角度*/
 }
