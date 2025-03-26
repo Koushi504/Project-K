@@ -11,7 +11,7 @@ a {
   font-size: large;
 }
 
-.title img { 
+.title img{
   position: relative;
   width: 100vw; 
 }
@@ -19,8 +19,8 @@ a {
 .title .sub img {
   position: absolute;
   width: 25%;
-  left:73%;
-  top:0px;
+  left: 73%;
+  top: 0px;
   max-width: 25%;
 }
 
@@ -37,12 +37,12 @@ a {
   color:yellow;
 }
 
-.title p .box{
+.title p .box {
   white-space: nowrap;
   font-weight: bolder;
 }
 
-.title p:before, .title p:after {
+.title p:before,.title p:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -56,37 +56,39 @@ a {
 .title p:before {
   left:0;
 }
+
 .title p:after {
   right: 0;
 }
 
 .time {
-  position:absolute;
-  top: 0;/*画像の左上に配置*/
+  position: absolute;
+  top:0;  /*画像の左上に配置*/
   left: 0;
-  margin: 0; /*余計な隙間を除く*/
+  margin: 0;/*余計な隙間を除く*/
   font-size: 15px;
   padding: 5px 10px;/*文字周りの余白*/
 }
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  /* 大枠（気にしないでください） */
-  body {
-    width: 100%;
-    background-color: #ffc7ee;
-  }
-  h2,
-  #wrapper {
-    width: center;
-    margin: 0 auto;
-  }
-  
-.accordion{
+  margin: 0;
+  padding: 0;
+}
+/* 大枠（気にしないでください） */
+body {
+  width: 100%;
+  background-color: #ffc7ee;
+}
+
+h2,
+#wrapper {
+  width: center;
+  margin: 0 auto;
+}
+
+.accordion {
   text-align: center;
-  }
+}
 
 /* アコーディオン ここから */
 .blackBox {
@@ -98,15 +100,17 @@ a {
 }
 
 dl:first-child {
-/*一番上のボタンとその上の文章の距離*/
-  margin-top:10px;
+  /*一番上のボタンとその上の文章の距離*/
+  margin-top: 10px;
 }
+
 dt {
-  position:relative;
+  position: relative;
   display: block;
   padding: 20px 0 20px 20px;
   background-color: #333333;
 }
+
 dt:after {
   content: "＞";
   position: absolute;
@@ -114,6 +118,7 @@ dt:after {
   left: 85%;
   transform: rotate(90deg);
 }
+
 dt.close:after {
   content: "＜";
   position: absolute;
@@ -121,18 +126,20 @@ dt.close:after {
   left: 85%;
   transform: rotate(-270deg);
 }
+
 dd {
   display: none;
   padding: 20px 0 20px 40px;
   color: rgb(0, 0, 0);
 }
 
-  /* ここまで */
+/* ここまで */
 .twitter {
-    float: right;
-    width: 30%;
-    height: 100px;
+  float: right;
+  width: 30%;
+  height: 100px;
 }
+
 .Instagram {
   float: left;
   width: 30%;
@@ -140,11 +147,11 @@ dd {
 }
 
 /* 新しいボタンのスタイル */
-
 dl{
   width: center;
   margin: 0 auto 10px auto;
 }
+
 /* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
 button {
   padding: 0;
@@ -154,7 +161,6 @@ button {
   background-color: transparent;
   border: none;
 }
-
 
 /* ボタンのスタイル */
 .buttonIconText {
